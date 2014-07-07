@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GeoPackage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,100italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/parallax.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                	<img src="img/ogc3.png" width="40" /> GeoPackage
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#news">News</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#implementations">Implementations</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#download">Download</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">GeoPackage</h1>
+                        <h3 class="intro-text">an open format for geospatial information</h3>
+                        <hr>
+                        <p>GeoPackage is the modern alternative to formats like SDTS and Shapefile. Its SQLite-based format efficiently stores and transfers geographic vector features and image tiles.</p>
+                        <ul class="list-inline banner-social-buttons">
+                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li class="page-scroll"><a href="#about" class="btn btn-default btn-lg"><i class="fa fa-info fa-fw"></i> <span class="network-name">Learn more</span></a>
+                    </li>
+                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>About GeoPackage</h2>
+                <hr>
+                <h3>GeoPackage is the modern alternative to formats like SDTS and Shapefile. At it’s core, GeoPackage is simply a SQLite database schema. If you know SQLite, you are close to knowing GeoPackage. Install Spatialite – the premiere spatial extention to SQLite – and you get all the performance of a spatial database along with the convenience of a file-based data set that can be emailed, shared on a USB drive or burned to a DVD.</h3>
+                <h3>GeoPackage was carefully designed this way to facilitate widespread adoption and use of a single simple file format by both commercial and open-source software applications — on enterprise production platforms as well as mobile hand-held devices. GeoPackage is a standard from the Open Geospatial Consortium. It was designed and prototyped following a multi-year, open process of requirements testing and public input. It is designed for extension. So if you need more than the core GeoPackage feature set, join OGC's open process to standardize community-tested enhancements.</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="news" class="container content-section text-center">
+        <div class="row">
+            <h2>News & Updates</h2>
+            <hr>
+            <div class="col-sm-6 news">
+            	<div>
+            		<h3 class="news-title">Latest development</h3>
+            		<h5>GeoPackage support in SpatiaLite 4.2.0 (Release Candidate 1)</h5>
+            	</div>
+            	<div>
+            		<h3 class="news-title">OGC Webinar</h3>
+            		<h5>View the Webinar given recently by Directions Magazine in collaboration with OGC!</h5>
+            	</div>
+            	<div>
+            		<h3 class="news-title">Official Standards Information</h3>
+            		<h5>For all official, normative information on the GeoPackage standard, including PDF format download, see the OGC standards program GeoPackage page.</h5>
+            	</div>
+            	<div>
+            		<h3 class="news-title">Implementation Guide</h3>
+            		<h5>Coming soon!</h5>
+            	</div>
+            </div>
+            <div class="col-sm-6">
+            	<a class="twitter-timeline" href="https://twitter.com/search?q=geopackage" data-widget-id="484746286709477376">Tweets about "geopackage"</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+        </div>
+    </section>
+    
+    <section id="implementations" class="container content-section text-left">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center">Implementations</h2>
+                <hr>
+                <div class="row">
+                	<div class="col-sm-2 impl">
+                		<div class="impl-title">Luciad's libgpkg</div>
+                		<div class="impl-body">libgpkg is a small C library that allows developers to easily read/write GeoPackage compliant SQLite files. The library only depends on SQLite. Luciad is pleased to announce they are making this base geopackage library available to the entire community as an open-source library. Our hope is that by releasing this library we can help in making geopackage a widely adopted format within the geo community.</div>
+                	</div>
+                	<div class="col-sm-2 impl">
+                		<div class="impl-title">Luciad GeoPackage Viewer</div>
+                		<div class="impl-body">To support the OGC OWS-9 and OWS-10 testbeds, Luciad has developed a viewer for Android that enables visualization of data following the OGC GeoPackage standard. The Luciad OGC GeoPackage Viewer is made available free of charge.</div>
+                	</div>
+                	<div class="col-sm-2 impl">
+                		<div class="impl-title">GDAL</div>
+                		<div class="impl-body">GDAL supports the vector portion of GeoPackage as an OGR Driver, available in GDAL versions 1.11.0 and above. Find and contribute to the code here on GitHub.</div>
+                		<br>
+                		<div class="impl-title">SpatiaLite</div>
+                		<div class="impl-body">GeoPackage support in SpatiaLite 4.2.0 (Release Candidate 1)
+							SpatiaLite is an open source library intended to extend the SQLite core to support fully fledged Spatial SQL capabilities.</div>
+                	</div>
+                	<div class="col-sm-2 impl">
+                		<div class="impl-title">OpenJUMP PLUS</div>
+                		<div class="impl-body">Thanks to Larry Reeder, OpenJUMP PLUS has already a fast, native, platform-independent support for reading vector data from OGC GeoPackage data files
+							Here's the blog post that describes how to read them
+							Grab a recent OpenJUMP PLUS snapshot here.	
+						</div>
+					</div>
+                	<div class="col-sm-2 impl">
+                		<div class="impl-title">GeoServer</div>
+                		<div class="impl-body">GeoPackage Extension plugin brings in the ability to read and write GeoPackage files both as Vector Data Stores as well as Raster Data Stores. GeoPackage can be used as an output format for WFS GetFeature (creating one vector data layer) as well as WMS GetMap (creating one raster data layer). The GeoServer GeoPackage extension also allows to create a completely custom made GeoPackage with multiple layers, using the GeoPackage process.</div>
+                	</div>
+                	<div class="col-sm-2 impl" style="border:0">
+                		<div class="impl-title">Esri ArcGIS</div>
+                		<div class="impl-body">ArcGIS 10.2.2 for Desktop and Server support the 1.0 vector spec
+								Summer 2014: ArcGIS 10.3 for Desktop will add vector and tiled raster support, and ArcGIS Runtime 10.2.4 for Android and Java will also support GeoPackage!
+						</div>
+						<br>
+						<div class="impl-title">GeoTools</div>
+                		<div class="impl-body">GeoTools 11-RC1 improves GeoPackage support</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="download" class="content-section text-center">
+        <div class="">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h2>Download Sample Data</h2>
+                    <hr>
+                    <div class="row">
+                    	<div class="col-sm-6">
+                    		<div class="panel panel-default">
+                    			<div class="panel-heading">
+                    				<div class="panel-title">
+                    					<span style="float:left"<a>Technology Data Set</a></span>
+                    					<span style="float:right"><a class="btn btn-xs">download</a></span>
+                    					<div style="clear:both"></div>
+                    				</div>
+                    			</div>
+                    			<div class="panel-body">
+                    				<ul>
+                    					<li>generated with GDAL (with -dev version to include spatial index support) thanks to Even Rouault</li>
+                    					<li>includes all geometry types supported by OGR (2d and 3d), all data types supported by OGR & GPKG, null properties, null geometries, a SRS different from the 3 required ones</li>
+                    					<li>also available is a Python script to generate this GeoPackage</li>
+                    				</ul>
+                    			</div>
+                    		</div>
+                    		<div class="panel panel-default">
+                    			<div class="panel-heading">
+                    				<div class="panel-title">
+                    					<span style="float:left"<a>Simple Sewers Test Data Set</a></span>
+                    					<span style="float:right"><a class="btn btn-xs">download</a></span>
+                    					<div style="clear:both"></div>
+                    				</div>
+                    			</div>
+                    			<div class="panel-body">
+                    				<ul>
+                    					<li>Courtesy of Augmented Technologies</li>
+										<li>Developed in OGC Testbed 10</li>
+                    				</ul>
+                    			</div>
+                    	</div>
+                    	</div>
+                    	<div class="col-sm-6">
+                    		<div class="panel panel-default">
+                    			<div class="panel-heading">
+                    				<div class="panel-title">
+                    					<span style="float:left"><a>Haiti OpenStreetMap tiles</a></span>
+                    					<span style="float:right"><a class="btn btn-xs">download</a></span>
+                    					<div style="clear:both"></div>
+                    				</div>
+                    			</div>
+                    			<div class="panel-body">
+                    				<ul>
+                    					<li>Courtesy of Sigma Bravo and Compusult</li>
+										<li>Developed in OWS-9 and updated in OWS-10</li>
+                    				</ul>
+                    			</div>
+                    	</div>
+                    		<div class="panel panel-default">
+                    			<div class="panel-heading">
+                    				<div class="panel-title">
+                    					<span style="float:left"><a>GeoNames data for Belgium</a></span>
+                    					<span style="float:right"><a class="btn btn-xs">download</a></span>
+                    					<div style="clear:both"></div>
+                    				</div>
+                    			</div>
+                    			<div class="panel-body">
+                    				<ul>
+                    					<li>Courtesy of Luciad</li>
+										<li>A March, 2014 extract from Geonames</li>
+                    				</ul>
+                    			</div>
+                    	</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs" class="container content-section text-center">
+        <div class="row">
+            <h2>Frequently Asked Questions</h2>
+            <hr>
+            <div class="col-sm-6 news">
+            	<div>
+            		<h3 class="news-title">How are GeoPackage files shared between apps on iOS and Android devices?</h3>
+            		<h4>OGC does not yet have a methodology or best practice for sharing files between apps on mobile devices. On Android there are a couple of different options. With some of the newer updates, Android has some interesting security constraints. There could be a nice solution using the ContentProvider API. On the iPhone, the security issues of the device cause a lot of problems for cross-app file sharing. Inherently, the device does not want applications to share data except in very narrowly defined ways. So data sharing between apps is not feasible at this time.</h4>
+            	</div>
+            </div>
+            <div class="col-sm-6 news">
+            	<div>
+            		<h3 class="news-title">What were the reasons to go with SQLite, when OGC has invested heavily in PostGIS?</h3>
+            		<h4>I wouldn't say OGC has invested in PostGIS. PostGIS implements OGC standards, but OGC as an organization hasn't put any time or effort into PostGIS. To us it's just like any other RDBMS implementation of the Simple Features spec. The primary use case for designing GeoPackage was mobile device use, and that's why SQLite was chosen as a platform. In this case OGC as an organization IS investing in a technology. This is unusual for us and we did not make the decision lightly, but practicality and ease of implementation won out over standards purity. And I'm happy to say we have yet to get any negative feedback on this decision -- probably because SQLite is considered more like a library than a standalone application.</h4>
+            	</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container content-section text-center" style="padding:200px 0">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contact OGC GeoPackage</h2>
+                <p>Copyright 2014 Open Geospatial Consortium. Some rights reserved.</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li><a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li><a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	
+    <!-- Core JavaScript Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - You will need to use your own API key to use the map feature -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
