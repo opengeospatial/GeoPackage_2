@@ -38,7 +38,7 @@ p {
 }
 
 a {
-    color: #28c3ab;
+    color: #4d80cd;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -47,7 +47,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #176e61;
+    color: #004ab8;
 }
 
 .light {
@@ -283,17 +283,19 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #28c3ab;
-    color: #28c3ab;
-    background-color: transparent;
+	opacity: 0.6;
+    border: 1px solid white;
+    color: #004ab8;
+    background-color: white;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #28c3ab;
+	opacity: 1;
+    border: 1px solid #004ab8;
     outline: 0;
-    color: #000;
-    background-color: #28c3ab;
+    color: white;
+    background-color: #004ab8;
 }
 
 .btn-huge {
@@ -354,11 +356,16 @@ body {
 
 .impl-title {
 	font-size:26px;
-	color: #28c8ab;
+	color: #4d80cd;
 	font-weight: 300;
 	padding-bottom:10px;
 	border-bottom:1px solid gainsboro;
 	margin-bottom:10px;
+}
+
+.impl-title a:hover,
+.impl-title a:focus {
+	color: #004ab8
 }
 
 .impl-body {
@@ -371,9 +378,9 @@ body {
 }
 
 .news-title {
-	color: #28c8ab;
+	color: #004ab8;
 }
 
 .hl {
-	color:#28c8ab;
+	color: #004ab8;
 }
